@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+}
+
+html{
+    font-size: 62.5%;
+    
+}
+
+body{
+    font-family: "Poppins" , sans-serif;
+}
+
+
+$header1: 2.5rem;
+$header2: 4rem;
+$header3: 2.5rem;
+$header4: 2rem;
+$text: 2.5rem;
+$gradient: linear-gradient(left, #38d39f, #38a4d3);
+$background-color:#154353;
+$gray-text: #2c2c2c;
+
+@mixin flex($justify, $align, $direction){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+
+
+
+h1{
+    font-size: $header1;
+   
+}
+
+h2{
+    font-size: $header2;
+}
+li,button,label,input,p,a{
+    font-size: $text;
+}
+
+
+h3{
+    font-size: $header3;
+}
+
+
+h4,h5{
+    font-size: $header4;
+
+}
+ul{
+    list-style: none;
+}
+a{
+
+    text-decoration: none;
+    color:$gray-text;
+   
+}
+
+
+/*footer */
+
+footer{
+    color:white;
+    background:rgba(19,28,39,1);
+     display: flex;
+     bottom:-50%;
+}
+
+
+.footer-wrapper{
+    display:flex;
+    padding:2 rem;
+    width:90%;
+    margin:auto;
+    align-items: center;
+    min-height:10vh;
+    flex-wrap:wrap;
+    bottom:0%;
+
+}
+
+footer h5{
+    flex: 1 1 40rem;
+
+}
+
+
+footer ul{
+    display:flex;
+    list-style:none;
+    flex: 1 1 30rem;
+    justify-content: space-between;
+    align-items: center;
+      
+}
+
+@import "intro";
+@import "projects";
+@import "contact";
+

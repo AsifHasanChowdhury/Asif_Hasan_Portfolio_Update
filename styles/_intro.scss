@@ -1,0 +1,176 @@
+.main-head{
+    width:90%;
+    margin: 0 0 0 auto;
+}
+$gradient: linear-gradient(left, #38d39f, #38a4d3);
+nav{
+    @include flex(space between, center,row);
+    min-height: 10vh;
+    width: 80%;
+    flex-wrap:wrap;
+    overflow: hidden;
+   
+
+    .logo{
+        @include flex(flex-start,center,row);
+        flex: 1 1 10rem;
+        h1{
+            margin: 2%;
+        }
+    }
+
+    ul{
+        @include flex(space-around, center, row);
+        flex: 1 2 60%;
+        
+    }
+    li{
+        z-index: 2;
+        overflow: hidden;
+
+    };
+
+   
+}
+
+.intro{
+    min-height: 90vh;
+    width:90%;
+    margin:auto;
+    flex-wrap: wrap;
+    @include flex(space-between,end,row);
+    h2{
+        font-size: 4rem;
+        padding-top: 4rem;
+        padding-left: 6%;
+        background:#38d39f;
+        background-clip:text;
+        -webkit-text-fill-color: transparent;
+    }
+    p{
+        padding-top: 2%;
+        padding-bottom: 4%;
+        padding-left: 6%;
+
+    }
+    h3{
+        padding-left: 6%;
+
+    }
+    .intro-social{
+        padding-left: 6%;
+    }
+}
+
+.splash{
+    position: absolute;
+    top:0%;
+    right:0%;
+    height:100%;
+    z-index: -1;
+}
+
+.intro-text{
+    flex: 1 1 40rem;
+
+}
+.intro-images{
+    
+    position: absolute;
+    left: 40%;
+    top: 0%;
+    flex: 1 1 40rem;
+
+}
+
+
+.Active{
+    background: $gray-text;
+    color:rgb(236, 230, 230);
+     padding: 1rem 2rem;
+     border-radius: 2rem;
+}
+
+/*footer */
+
+footer{
+    color:white;
+    background:rgba(19,28,39,1);
+     display: flex;
+}
+
+
+.footer-wrapper{
+    display:flex;
+    padding:2 rem;
+    width:90%;
+    margin:auto;
+    align-items: center;
+    min-height:10vh;
+    flex-wrap:wrap;
+}
+
+footer h5{
+    flex: 1 1 40rem;
+
+}
+
+
+footer ul{
+    display:flex;
+    list-style:none;
+    flex: 1 1 30rem;
+    justify-content: space-between;
+    align-items: center;
+      
+}
+
+
+
+#plant-left{
+ animation: plant 1.5s ease infinite alternate 0.4s;
+}
+
+#plant-right{
+    animation: plant 1.5s ease infinite alternate 0.5s;
+}
+
+#me{
+    animation: me 2s ease infinite alternate;
+    transform-origin: bottom;
+}
+
+#clock-arrow{
+    animation: clock 1.5s infinite;
+    transform-box:fill-box;
+    transform-origin: bottom;
+
+}
+@keyframes plant {
+    from{
+        transform:translateY(0%);
+    }
+    to{
+        transform: translateY(-30%);
+    }
+}
+
+
+
+@keyframes me{
+    from{
+        transform:rotateZ(-5deg);
+    }
+    to{
+        transform:rotateZ(5deg);
+    }
+}
+
+@keyframes clock{
+    from{
+        transform:rotateZ(0deg);
+    }
+    to{
+        transform:rotateZ(360deg);
+    }
+}

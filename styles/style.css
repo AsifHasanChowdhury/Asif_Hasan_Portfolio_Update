@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+li, button, label, input, p, a {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4, h5 {
+  font-size: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #2c2c2c;
+}
+
+.main-head {
+  width: 90%;
+  margin: 0 0 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space between;
+  align-items: center;
+  flex-direction: row;
+  min-height: 10vh;
+  width: 80%;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+nav .logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex: 1 1 10rem;
+}
+nav .logo h1 {
+  margin: 2%;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex: 1 2 60%;
+}
+nav li {
+  z-index: 2;
+  overflow: hidden;
+}
+
+.intro {
+  min-height: 90vh;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  flex-direction: row;
+}
+.intro h2 {
+  font-size: 4rem;
+  padding-top: 4rem;
+  padding-left: 6%;
+  background: #38d39f;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.intro p {
+  padding-top: 2%;
+  padding-bottom: 4%;
+  padding-left: 6%;
+}
+.intro h3 {
+  padding-left: 6%;
+}
+.intro .intro-social {
+  padding-left: 6%;
+}
+
+.splash {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  height: 100%;
+  z-index: -1;
+}
+
+.intro-text {
+  flex: 1 1 40rem;
+}
+
+.intro-images {
+  position: absolute;
+  left: 40%;
+  top: 0%;
+  flex: 1 1 40rem;
+}
+
+.Active {
+  background: #2c2c2c;
+  color: rgb(236, 230, 230);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+}
+
+/*footer */
+footer {
+  color: white;
+  background: rgb(19, 28, 39);
+  display: flex;
+}
+
+.footer-wrapper {
+  display: flex;
+  padding: 2 rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+
+footer h5 {
+  flex: 1 1 40rem;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 30rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#plant-left {
+  -webkit-animation: plant 1.5s ease infinite alternate 0.4s;
+          animation: plant 1.5s ease infinite alternate 0.4s;
+}
+
+#plant-right {
+  -webkit-animation: plant 1.5s ease infinite alternate 0.5s;
+          animation: plant 1.5s ease infinite alternate 0.5s;
+}
+
+#me {
+  -webkit-animation: me 2s ease infinite alternate;
+          animation: me 2s ease infinite alternate;
+  transform-origin: bottom;
+}
+
+#clock-arrow {
+  -webkit-animation: clock 1.5s infinite;
+          animation: clock 1.5s infinite;
+  transform-box: fill-box;
+  transform-origin: bottom;
+}
+
+@-webkit-keyframes plant {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-30%);
+  }
+}
+
+@keyframes plant {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-30%);
+  }
+}
+@-webkit-keyframes me {
+  from {
+    transform: rotateZ(-5deg);
+  }
+  to {
+    transform: rotateZ(5deg);
+  }
+}
+@keyframes me {
+  from {
+    transform: rotateZ(-5deg);
+  }
+  to {
+    transform: rotateZ(5deg);
+  }
+}
+@-webkit-keyframes clock {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes clock {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+.projects {
+  width: 90%;
+  margin: auto;
+  min-height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.travelly, .elena {
+  flex: 1 2 40rem;
+}
+
+.travelly img {
+  max-width: 90%;
+}
+
+.elena img {
+  max-width: 90%;
+}
+
+.form-section {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 4rem;
+}
+.form-section form {
+  padding: 3rem 10rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 2rem;
+}
+.form-section form input,
+.form-section form textarea {
+  margin: 2rem;
+}
+.form-section form input:focus,
+.form-section form textarea:focus {
+  outline: 2px solid black;
+}/*# sourceMappingURL=style.css.map */
